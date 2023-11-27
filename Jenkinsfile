@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     environment {
-        BUILD_VERSION = 1.0
+        VER = "${sh(script:'echo 1.23', returnStdout: true).trim()}"
+        BUILD_VERSION = "${env.VER}"
     }
     tools {
         
