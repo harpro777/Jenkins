@@ -28,6 +28,7 @@ pipeline {
             steps {
                 echo "Test Hello World ${BUILD_VERSION}"
                 sh 'hostname'
+                sh 'date'
             }
         }
     }
