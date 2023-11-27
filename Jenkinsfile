@@ -5,9 +5,6 @@ pipeline {
         VER = "${sh(script:'echo 1.23', returnStdout: true).trim()}"
         BUILD_VERSION = "${env.VER}"
     }
-    tools {
-        
-    }
 
     stages {
         stage('Clone') {
