@@ -20,6 +20,7 @@ pipeline {
             steps {
                 echo "Building Hello World ${BUILD_VERSION}"
                 sh 'hostname'
+                sh 'date'
             }
         }
 
